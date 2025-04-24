@@ -8,5 +8,6 @@ export const openAuthSession: OpenAuthSession = async (url: string) => {
 		return;
 	}
 	// enforce HTTPS
-	window.location.href = url.replace('http://', 'https://');
+	// window.location.href = url.replace('http://', 'https://');
+	window.open(url.replace('http://', 'https://'));
 };
